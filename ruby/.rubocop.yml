@@ -1,0 +1,73 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'bin/*'
+    - 'client/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'ruby/**/*'
+    - 'script/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+
+Rails:
+  Enabled: true
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Style/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+  EnforcedLastArgumentHashStyle: ignore_implicit
+  SupportedLastArgumentHashStyles: ignore_implicit
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*'
+
+Style/CollectionMethods:
+  PreferredMethods:
+    find: detect
+    inject: reduce
+    collect: map
+    find_all: select
+
+Style/ColonMethodCall:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/Documentation:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: empty_lines
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: empty_lines
+
+Style/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'spec/**/*'
+    - !ruby/regexp /controller_decorator\.rb$/
+
+Style/LineLength:
+  Max: 160
+  AllowURI: true
+
+Style/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+    - has_
+    - have_
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
