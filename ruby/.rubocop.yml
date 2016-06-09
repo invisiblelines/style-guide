@@ -49,10 +49,10 @@ Style/Encoding:
   Enabled: false
 
 Style/EmptyLinesAroundClassBody:
-  Enabled: empty_lines
+  Enabled: false
 
 Style/EmptyLinesAroundModuleBody:
-  Enabled: empty_lines
+  Enabled: false
 
 Style/EmptyLinesAroundBlockBody:
   Exclude:
