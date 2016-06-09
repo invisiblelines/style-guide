@@ -59,7 +59,7 @@ Style/EmptyLinesAroundBlockBody:
     - 'spec/**/*'
     - !ruby/regexp /controller_decorator\.rb$/
 
-Style/LineLength:
+Metrics/LineLength:
   Max: 160
   AllowURI: true
 
